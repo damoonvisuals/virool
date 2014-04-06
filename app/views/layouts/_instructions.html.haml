@@ -1,0 +1,25 @@
+.well
+  %h1 Instructions
+  %h3 Given table:
+  %ul
+    %li site_id (placement dimension)
+    %li platform (placement dimension)
+    %li country (location dimension)
+    %li state (location dimension)
+    %li amount
+    %li data (date dimension)
+  %h3 Build application that builds the following projections:
+  %ol
+    %li country | count(amount)
+    %li state | count(amount)
+    %li site_id | count
+    %li platform | count
+    %li country | platform | amount
+    %li country | site_id | amount
+    %li ...
+    %li country | date | amount
+    %li ...
+    %li date | site_id | amount
+    %li date | country
+  %br
+  %p Actually it's about building query that should combine 1 or 2 dimensions into a single table.
