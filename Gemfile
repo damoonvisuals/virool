@@ -50,8 +50,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Needed for Heroku logging
+# Use for Heroku
 gem 'rails_12factor', group: :production
+gem 'pg'
 
 group :development do
   gem 'annotate', '~> 2.6.1'
