@@ -7,4 +7,5 @@ class Site < ActiveRecord::Base
   validates :amount, presence: true
   validates :data, presence: true
 
+
 end

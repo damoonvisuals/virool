@@ -56,6 +56,9 @@ end
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
+# Use for test cases
+gem 'faker'
+
 group :development do
   gem 'annotate', '~> 2.6.1'
   gem 'thin', '~> 1.6.1'
