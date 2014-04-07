@@ -27,8 +27,38 @@
 //= require turbolinks
 //= require_tree .
 
-$(function () {
-  $("#one").click(function () {
-    $('#one-table').toggle('slow');
-  })
-})
+// $(function () {
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#two").click(function () {
+//     $('#two-table').toggle('slow');
+//   })
+//   $("#three").click(function () {
+//     $('#three-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+//   $("#one").click(function () {
+//     $('#one-table').toggle('slow');
+//   })
+// })
