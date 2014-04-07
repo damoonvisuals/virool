@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-
     @countries_count_amount = Site.group("country").sum("amount", order: "sum_amount DESC")
     @states_count_amount = Site.group("state").sum("amount", order: "sum_amount DESC")
     @site_ids_count = Site.site_ids_count

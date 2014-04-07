@@ -2,8 +2,8 @@
 %h1 Virool Small Task
 %ol
   %li
-    %h5 country | count(amount)
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#one-table"} country | count(amount)
+    %table{id: "one-table", class: "table collapse in"}
       %thead
         %tr
           %th country
@@ -15,8 +15,8 @@
             %td #{value}
         
   %li
-    %h5 state | count(amount)
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#two-table"} state | count(amount)
+    %table{id: "two-table", class: "table collapse in"}
       %thead
         %tr
           %th state
@@ -28,8 +28,8 @@
             %td #{value}
       
   %li
-    %h5 site_id | count
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#three-table"} site_id | count
+    %table{id: "three-table", class: "table collapse in"}
       %thead
         %tr
           %th site_id
@@ -37,8 +37,8 @@
       %tbody
         = render partial: "sites/site_ids_count", collection: @site_ids_count
   %li
-    %h5 platform | count
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#four-table"} platform | count
+    %table{id: "four-table", class: "table collapse in"}
       %thead
         %tr
           %th platform
@@ -46,8 +46,8 @@
       %tbody
         = render partial: "sites/platforms_count", collection: @platforms_count
   %li
-    %h5 country | platform | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#five-table"} country | platform | amount
+    %table{id: "five-table", class: "table collapse in"}
       %thead
         %tr
           %th country
@@ -56,8 +56,8 @@
       %tbody
         = render partial: "sites/country_platform_amount", collection: @country_platform_amount
   %li
-    %h5 country | site_id | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#six-table"} country | site_id | amount
+    %table{id: "six-table", class: "table collapse in"}
       %thead
         %tr
           %th country
@@ -66,8 +66,8 @@
       %tbody
         = render partial: "sites/country_site_id_amount", collection: @country_site_id_amount
   %li
-    %h5 country | state | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#seven-table"} country | state | amount
+    %table{id: "seven-table", class: "table collapse in"}
       %thead
         %tr
           %th country
@@ -76,8 +76,8 @@
       %tbody
         = render partial: "sites/country_state_amount", collection: @country_state_amount
   %li
-    %h5 country | date | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#eight-table"} country | date | amount
+    %table{id: "eight-table", class: "table collapse in"}
       %thead
         %tr
           %th country
@@ -86,8 +86,8 @@
       %tbody
         = render partial: "sites/country_date_amount", collection: @country_date_amount
   %li
-    %h5 date | platform | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#nine-table"} date | platform | amount
+    %table{id: "nine-table", class: "table collapse in"}
       %thead
         %tr
           %th date
@@ -96,8 +96,8 @@
       %tbody
         = render partial: "sites/date_platform_amount", collection: @date_platform_amount
   %li
-    %h5 date | state | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#ten-table"} date | state | amount
+    %table{id: "ten-table", class: "table collapse in"}
       %thead
         %tr
           %th date
@@ -106,8 +106,8 @@
       %tbody
         = render partial: "sites/date_state_amount", collection: @date_state_amount
   %li
-    %h5 date | site_id | amount
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#eleven-table"} date | site_id | amount
+    %table{id: "eleven-table", class: "table collapse in"}
       %thead
         %tr
           %th date
@@ -116,8 +116,8 @@
       %tbody 
         = render partial: "sites/date_site_id_amount", collection: @date_site_id_amount
   %li
-    %h5 date | country
-    %table.table.table-bordered
+    %a{class: "table-toggle", "data-toggle" => "collapse", "data-target" => "#twelve-table"} date | country
+    %table{id: "twelve-table", class: "table collapse in"}
       %thead
         %tr
           %th date

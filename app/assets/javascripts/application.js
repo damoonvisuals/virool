@@ -26,3 +26,9 @@
 //= require bootstrap/transition
 //= require turbolinks
 //= require_tree .
+
+$(function () {
+  $("#one").click(function () {
+    $('#one-table').toggle('slow');
+  })
+})
