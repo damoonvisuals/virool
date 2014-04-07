@@ -6,6 +6,8 @@ Virool::Application.routes.draw do
   # root 'welcome#index'
   root to: 'static_pages#home'
 
+  resources :sites
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,2 +1,126 @@
 - provide(:title, 'Home')
 %h1 Virool Small Task
+%ol
+  %li
+    %h5 country | count(amount)
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th country
+          %th count(amount)
+      %tbody
+        - @countries_count_amount.each do |key, value|
+          %tr
+            %td #{key}
+            %td #{value}
+        
+  %li
+    %h5 state | count(amount)
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th state
+          %th count(amount)
+      %tbody
+        - @states_count_amount.each do |key, value|
+          %tr
+            %td #{key}
+            %td #{value}
+      
+  %li
+    %h5 site_id | count
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th site_id
+          %th count
+      %tbody
+        = render partial: "sites/site_ids_count", collection: @site_ids_count
+  %li
+    %h5 platform | count
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th platform
+          %th count
+      %tbody
+        = render partial: "sites/platforms_count", collection: @platforms_count
+  %li
+    %h5 country | platform | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th country
+          %th platform
+          %th amount
+      %tbody
+        = render partial: "sites/country_platform_amount", collection: @country_platform_amount
+  %li
+    %h5 country | site_id | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th country
+          %th site_id
+          %th amount
+      %tbody
+        = render partial: "sites/country_site_id_amount", collection: @country_site_id_amount
+  %li
+    %h5 country | state | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th country
+          %th state
+          %th amount
+      %tbody
+        = render partial: "sites/country_state_amount", collection: @country_state_amount
+  %li
+    %h5 country | date | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th country
+          %th date
+          %th amount
+      %tbody
+        = render partial: "sites/country_date_amount", collection: @country_date_amount
+  %li
+    %h5 date | platform | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th date
+          %th platform
+          %th amount
+      %tbody
+        = render partial: "sites/date_platform_amount", collection: @date_platform_amount
+  %li
+    %h5 date | state | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th date
+          %th state
+          %th amount
+      %tbody
+        = render partial: "sites/date_state_amount", collection: @date_state_amount
+  %li
+    %h5 date | site_id | amount
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th date
+          %th site_id
+          %th amount
+      %tbody 
+        = render partial: "sites/date_site_id_amount", collection: @date_site_id_amount
+  %li
+    %h5 date | country
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th date
+          %th country
+      %tbody          
+        = render partial: "sites/date_country", collection: @date_country
